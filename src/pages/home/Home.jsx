@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -12,18 +13,18 @@ const Home = () => {
           possibilities. Start your journey today!
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a
-            href="/register"
+          <Link
+            to="/register"
             className="bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300"
           >
             Get Started
-          </a>
-          <a
-            href="/login"
+          </Link>
+          <Link
+            to="/login"
             className="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-white hover:text-indigo-600 transition duration-300"
           >
             Login
-          </a>
+          </Link>
         </div>
       </div>
     </div>

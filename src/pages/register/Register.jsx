@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../../redux/slices/user-slice";
 import { v4 as uuidv4 } from "uuid";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const user = useSelector((s) => s.user.value);
@@ -55,9 +56,9 @@ const Register = () => {
         </form>
         <p className="text-center text-gray-200 mt-6">
           Already have an account?{" "}
-          <a href="/login" className="text-lime-300 hover:underline">
+          <Link to="/login" className="text-lime-300 hover:underline">
             Log in
-          </a>
+          </Link>
         </p>
       </div>
     </div>

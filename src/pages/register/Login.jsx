@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { signIn, signOut } from "../../redux/slices/token-slice";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const users = useSelector((s) => s.user.value);
@@ -56,9 +56,9 @@ const Login = () => {
         </form>
         <p className="text-center text-gray-400 mt-6">
           Don't have an account?{" "}
-          <a href="/register" className="text-cyan-400 hover:underline">
+          <Link to="/register" className="text-cyan-400 hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>
