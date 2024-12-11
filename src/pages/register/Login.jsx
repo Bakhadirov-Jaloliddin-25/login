@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { signIn, signOut } from "../../redux/slices/token-slice";
+import { signIn } from "../../redux/slices/token-slice";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
